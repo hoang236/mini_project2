@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #bbeaea;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.container2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #bbeaea;
+  background-size: cover;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid;
+  border-color: white;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  border-color: white;
+  border-radius: 25px;
+}
+
+.button:hover
+{
+  background:#FB637E;
+}
+
+p {
+  font-family: sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.typewriter h2 {
+  font-family: sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 250px;
+  left: 450px;
+  color: #FB637E;
+  padding-left: 20px;
+  padding-right: 20px
+  margin: 0 auto;
+  overflow: auto;
+  white-space: nowrap;
+  border-right: .15em solid white;
+  animation:
+    typing 3.5s steps(50, end);
+    blinking-curson .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.ball {
+  background-color: #FB637E;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  margin-right: -50%;
+  animation: bounce 1.3s infinite;
+}
+
+@keyframes bounce {
+  10% {
+    height: 50px;
+    width: 50px;
+  }
+  30% {
+    height: 50px;
+    width: 40px;
+  }
+  50% {
+    height: 30px;
+    width: 57px;
+    transform: translateY(240px);
+  }
+  75% {
+    height: 50px;
+    width: 57px;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.shadow {
+  background-color: rgba(8, 8, 8, 0.05);
+  height: 10px;
+  width: 65px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  z-index: -1;
+  animation: shrink 1.3s infinite;
+}
+
+@keyframes shrink {
+  50% {
+    transform: scaleX(0.5);
+  }
+}
+
+.box {
+	opacity: 0;
+	animation: fade 1s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+}
+
+@keyframes fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
